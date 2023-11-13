@@ -15,10 +15,68 @@ CubeRenderable::CubeRenderable(ShaderProgramPtr shaderProgram)
 	m_positions.push_back( glm::vec3 (1 ,0 ,0) );
 	m_positions.push_back( glm::vec3 (0 ,1 ,0) );
 
-	m_colors.push_back(glm::vec4(0.4, 0.8, 0.8, 1.0)); //(r,g,b,a)
-	m_colors.push_back(glm::vec4(0.7, 0.8, 0.8, 1.0));
-	m_colors.push_back(glm::vec4(0.3, 0.8, 0.8, 1.0));
+	m_positions.push_back( glm::vec3 (-1 ,0 ,0) );
+	m_positions.push_back( glm::vec3 (1 ,0 ,0) );
+	m_positions.push_back( glm::vec3 (0 ,-1 ,0) );
 
+	m_positions.push_back( glm::vec3 (-1 ,0 ,1) );
+	m_positions.push_back( glm::vec3 (1 ,0 ,1) );
+	m_positions.push_back( glm::vec3 (0 ,1 ,1) );
+
+	m_positions.push_back( glm::vec3 (-1 ,0 ,1) );
+	m_positions.push_back( glm::vec3 (1 ,0 ,1) );
+	m_positions.push_back( glm::vec3 (0 ,-1 ,1) );
+
+	m_positions.push_back( glm::vec3 (0 ,1 ,0) );
+	m_positions.push_back( glm::vec3 (0 ,1 ,1) );	
+	m_positions.push_back( glm::vec3 (1 ,0, 1) );
+
+	m_positions.push_back( glm::vec3 (1 ,0 ,0) );
+	m_positions.push_back( glm::vec3 (0 ,1 ,0) );	
+	m_positions.push_back( glm::vec3 (1 ,0, 1) );
+
+	m_positions.push_back( glm::vec3 (-1 ,0 ,0) );
+	m_positions.push_back( glm::vec3 (0 ,1 ,0) );	
+	m_positions.push_back( glm::vec3 (0 ,1, 1) );
+
+	m_positions.push_back( glm::vec3 (-1 ,0 ,0) );
+	m_positions.push_back( glm::vec3 (-1 ,0 ,1) );	
+	m_positions.push_back( glm::vec3 (0 ,1, 1) );
+
+	
+
+
+	m_colors.push_back(glm::vec4(0.4, 0.8, 0.8, 1.0)); //(r,g,b,a)
+	m_colors.push_back(glm::vec4(0.4, 0.8, 0.8, 1.0));
+	m_colors.push_back(glm::vec4(0.4, 0.8, 0.8, 1.0));
+
+	m_colors.push_back(glm::vec4(0.2, 0.6, 0.2, 1.0));
+	m_colors.push_back(glm::vec4(0.2, 0.6, 0.2, 1.0));
+	m_colors.push_back(glm::vec4(0.2, 0.6, 0.2, 1.0));
+
+	m_colors.push_back(glm::vec4(0.6, 0.8, 0.4, 1.0));
+	m_colors.push_back(glm::vec4(0.6, 0.8, 0.4, 1.0));
+	m_colors.push_back(glm::vec4(0.6, 0.8, 0.4, 1.0));
+
+	m_colors.push_back(glm::vec4(0.7, 0.5, 0.4, 1.0));
+	m_colors.push_back(glm::vec4(0.7, 0.5, 0.4, 1.0));
+	m_colors.push_back(glm::vec4(0.7, 0.5, 0.4, 1.0));
+
+	m_colors.push_back(glm::vec4(0.4, 0.5, 0.9, 1.0));
+	m_colors.push_back(glm::vec4(0.4, 0.5, 0.9, 1.0));
+	m_colors.push_back(glm::vec4(0.4, 0.5, 0.9, 1.0));
+
+	m_colors.push_back(glm::vec4(0.6, 0.1, 0.3, 1.0));
+	m_colors.push_back(glm::vec4(0.6, 0.1, 0.3, 1.0));
+	m_colors.push_back(glm::vec4(0.6, 0.1, 0.3, 1.0));
+
+	m_colors.push_back(glm::vec4(0.2, 0.1, 0.2, 1.0));
+	m_colors.push_back(glm::vec4(0.2, 0.1, 0.2, 1.0));
+	m_colors.push_back(glm::vec4(0.2, 0.1, 0.2, 1.0));
+
+	m_colors.push_back(glm::vec4(0.1, 0.6, 0.7, 1.0));
+	m_colors.push_back(glm::vec4(0.1, 0.6, 0.7, 1.0));
+	m_colors.push_back(glm::vec4(0.1, 0.6, 0.7, 1.0));
 	// Set the model matrix to identity
 	m_model = glm::mat4(1.0);
 
