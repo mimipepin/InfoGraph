@@ -2,7 +2,8 @@
 #include <glm/glm.hpp>
 #include "./../include/ShaderProgram.hpp"
 #include "./../include/FrameRenderable.hpp"
-#include "./../include/IndexedCubeRenderable.hpp"
+// #include "./../include/IndexedCubeRenderable.hpp"
+#include "./../include/CubeRenderable.hpp"
 
 #define SCR_WIDTH 1024
 #define SCR_HEIGHT 768
@@ -33,7 +34,8 @@ int main( int argc, char* argv[] )
 	// When instantiating a renderable you must specify the shader program used to draw it .
 	FrameRenderablePtr frame = std::make_shared<FrameRenderable>(defaultShader);
 	// Instantiate a CubeRenderable while specifying its shader program
-	IndexedCubeRenderablePtr cube = std::make_shared<IndexedCubeRenderable>(flatShader);
+	// IndexedCubeRenderablePtr cube = std::make_shared<IndexedCubeRenderable>(flatShader);
+	CubeRenderablePtr cube = std::make_shared<CubeRenderable>(flatShader);
 	
 	viewer.addRenderable(frame);
 	viewer.addRenderable(cube);
