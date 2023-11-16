@@ -46,7 +46,10 @@ IndexedCubeRenderable::IndexedCubeRenderable(ShaderProgramPtr shaderProgram)
 
 
 	// Set the model matrix to identity
-	m_model = glm::mat4(1.0);
+	// m_model = glm::mat4(1.0);
+
+	m_model = glm::translate(glm::mat4(), glm::vec3(-2,0,0));
+	m_model = glm::rotate(m_model, -90.0f, glm::vec3(0,1,0));
 
 	//Create buffers
 	glGenBuffers(1, &m_vBuffer); //vertices

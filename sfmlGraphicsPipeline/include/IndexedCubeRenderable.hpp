@@ -1,5 +1,5 @@
-#ifndef CUBE_RENDERABLE_HPP
-#define CUBE_RENDERABLE_HPP
+#ifndef INDEXED_CUBE_RENDERABLE_HPP
+#define INDEXED_CUBE_RENDERABLE_HPP
 
 #include "Renderable.hpp"
 #include <vector>

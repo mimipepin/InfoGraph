@@ -78,7 +78,10 @@ CubeRenderable::CubeRenderable(ShaderProgramPtr shaderProgram)
 	m_colors.push_back(glm::vec4(0.1, 0.6, 0.7, 1.0));
 	m_colors.push_back(glm::vec4(0.1, 0.6, 0.7, 1.0));
 	// Set the model matrix to identity
-	m_model = glm::mat4(1.0);
+	// m_model = glm::mat4(1.0);
+	glm::mat4 translateTransfo = glm::translate(glm::mat4(), glm::vec3(-4,0,0));
+	glm::mat4 rotateTransfo = glm::rotate(m_model, -150.0f, glm::vec3(0,1,1));
+	m_model = translateTransfo * rotateTransfo;
 
 	//Create buffers
 	glGenBuffers(1, &m_vBuffer); //vertices
